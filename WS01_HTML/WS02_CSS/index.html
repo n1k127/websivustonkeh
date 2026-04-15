@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang= "fi">
+  
+  <head>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+
+      h1 {
+        color: green;
+      }
+
+      p {
+        color: white;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .content-box {
+        padding: 15px;
+        margin: 10px;
+        background-color: #5eb482;
+        border: 5px solid #ccc;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #4436c4;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    </style>
+    <title> My First HTML Page</title>
+
+  </head>
+
+  <body>
+    <h1>Nikitan eka HTML sivu</h1>
+    <p style="color: #333">Tykkään nukkua.</p>
+
+    <img
+      src="websivustotehtavakuva.jpg"
+      alt="kuvalinkki on rikki"
+      width="300"
+      height="400"
+    />
+    <br />
+    <a href="https://youtube.com">Visit YouTube</a>
+
+    <h2>Harrastukset</h2>
+
+    <div class="content-box">
+      <h3>Alla näkyy harrastukset järjestyksessä</h3>
+      <p>ZZZ</p>
+    </div>
+
+    <ol>
+      <li>Sali</li>
+      <li>Koripallo</li>
+      <li>Jalkapallo</li>
+    </ol>
+
+    <table>
+      <tr>
+        <th>Aihepiiri</th>
+        <th>Kuvaus</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Sivun</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Ulkoasu</td>
+      </tr>
+      <tr>
+        <td>Responsiivisuus</td>
+        <td>Sivuston toimivuus</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
