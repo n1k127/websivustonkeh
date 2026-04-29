@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Workshop 4</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      header {
+        background: #333;
+        color: white;
+        padding: 15px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .grid-item {
+        background-color: lightgreen;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .box {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .responsive-box {
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .responsive-box {
+          background-color: lightcoral;
+        }
+      }
+
+      @media (min-width: 601px) {
+        .responsive-box {
+          background-color: lightseagreen;
+        }
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am 21 years old and live in Finland.</p>
+      </section>
+
+      <section id="grid">
+        <h2>Finnish cities</h2>
+
+        <div class="grid-container">
+          <div class="grid-item">Helsinki</div>
+          <div class="grid-item">Turku</div>
+          <div class="grid-item">Oulu</div>
+          <div class="grid-item">Jyväskylä</div>
+          <div class="grid-item">Lahti</div>
+          <div class="grid-item">Joensuu</div>
+        </div>
+      </section>
+
+      <section id="flex">
+        <h2>The most famous ones</h2>
+        <div class="flex-container">
+          <div class="box">Helsinki</div>
+          <div class="box">Espoo</div>
+          <div class="box">Tampere</div>
+        </div>
+      </section>
+
+      <section id="responsive">
+        <h2>Responsive Box</h2>
+        <div class="responsive-box">Resize the window to see the effect</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright 2025</p>
+    </footer>
+  </body>
+</html>
